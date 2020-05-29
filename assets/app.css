@@ -13,15 +13,6 @@
     border-radius: 5px;
 }
 
-.hero {
-    margin-bottom: 300px;
-}
-
-.hero .hero-body .subtitle {
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-}
-
 .highlight, em {
     background-color: var(--red-color);
     padding: 5px;
@@ -39,4 +30,25 @@
 
 .navbar-item img {
     max-height: 5.75rem;
+}
+
+@media (max-width: 600px) {
+    .demo {
+        width: 100%;
+    }
+}
+
+/* Bulma overwrite */
+
+.hero {
+    margin-bottom: 300px;
+}
+
+.hero .hero-body .subtitle {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.hero.is-danger a.navbar-item:hover {
+    background: none;
 }
