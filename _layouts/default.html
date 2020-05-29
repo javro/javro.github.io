@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, user-scalable=no, minimal-ui">
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+    <link rel="icon" href="{{ '/assets/images/icon.png' | absolute_url }}"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.2/css/bulma.min.css"/>
+    <link rel="stylesheet" href="{{ '/assets/app.css' | absolute_url }}">
+</head>
+
+<body>
+
+<section class="hero is-danger is-bold">
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="{{ '/assets/images/icon.png' | absolute_url }}" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li><a>Home</a></li>
+                            </ul>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined"
+                                   href="https://github.com/javro/javro">
+                                    <span title="Hello from the other side">View Source</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                Manage your Avro with ease
+            </h1>
+            <h2 class="subtitle">
+                <strong class="has-text-weight-bold">Javro</strong> is an interface allowing you to build an Avro with ease, to validate it,<br>and to preview it into JSON format with samples.
+
+                {% include download.html %}
+            </h2>
+            <div class="demo">
+                <img src="{{ '/assets/images/demo.gif' | absolute_url }}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container">
+    <div class="intro column is-8 is-offset-2 content">
+        {{ content }}
+
+        {% include download.html %}
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="columns">
+            <div class="column has-text-centered">
+                <strong>Made with <3 by <a href="https://twitter.com/tiste">Baptiste</a> & <a href="https://twitter.com/delphinaubin">Delphin</a></strong>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

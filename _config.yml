@@ -1,7 +1,0 @@
-theme: jekyll-theme-architect
-title: Javro
-description: Javro is a tool that helps you convert any Avro file into JSON, and reverse.
-show_downloads: true
-github:
-  zip_url: https://github.com/javro/javro/releases/download/v0.0.1/Javro-0.0.1-mac.zip
-  tar_url: https://github.com/javro/javro/archive/v0.0.1.tar.gz

@@ -1,0 +1,37 @@
+:root {
+    --brand-color: #FF634D;
+}
+
+.demo {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: -300px;
+}
+
+.demo img {
+    border-radius: 5px;
+}
+
+.hero {
+    margin-bottom: 300px;
+}
+
+.hero .hero-body .subtitle {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.highlight, em {
+    background-color: var(--brand-color);
+    padding: 5px;
+    border-radius: 5px;
+    font-style: normal;
+    color: white;
+    font-weight: bold;
+}
+
+.download {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
