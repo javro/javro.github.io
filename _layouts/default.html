@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.2/css/bulma.min.css"/>
     <link rel="stylesheet" href="{{ '/assets/app.css' | absolute_url }}">
+
+    {% seo title=false %}
 </head>
 
 <body>
@@ -24,22 +26,26 @@
                     <a class="navbar-item" href="/">
                         <img src="{{ '/assets/images/icon.png' | absolute_url }}" alt="Logo">
                     </a>
-                    <span class="navbar-burger burger" data-target="navbarMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <span class="navbar-item is-hidden-desktop" style="width: 100%">
+                        <a class="button is-white is-outlined"
+                           href="https://github.com/javro/javro" style="margin: 0 auto; margin-right: 8rem;">
+                            <span class="icon">
+                                <i class="fa fa-github"></i>
+                            </span>
+                            <span>View Source</span>
+                        </a>
                     </span>
                 </div>
-                <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-menu">
                     <div class="navbar-end">
                         <div class="tabs is-right">
-                            <ul>
-                                <li><a>Home</a></li>
-                            </ul>
                             <span class="navbar-item">
                                 <a class="button is-white is-outlined"
                                    href="https://github.com/javro/javro">
-                                    <span title="Hello from the other side">View Source</span>
+                                    <span class="icon">
+                                        <i class="fa fa-github"></i>
+                                    </span>
+                                    <span>View Source</span>
                                 </a>
                             </span>
                         </div>
@@ -51,10 +57,10 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title">
-                Manage your Avro with ease
+                Avro editor on steroids
             </h1>
             <h2 class="subtitle">
-                <strong class="has-text-weight-bold">Javro</strong> is an interface allowing you to build an Avro with ease, to validate it,<br>and to preview it into JSON format with samples.
+                <strong class="has-text-weight-bold">Javro</strong> is an interface allowing you to write Avro schemas with ease, to validate it,<br>and to preview it into JSON format with samples.
 
                 {% include download.html %}
             </h2>

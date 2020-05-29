@@ -1,12 +1,17 @@
-# 1. Build with ease
+---
+title: "Javro: Avro editor on steroids, allowing you to write Avro schemas with ease"
+description: Javro is an interface allowing you to write Avro schemas with ease, to validate it, and to preview it into JSON format with samples
+---
 
-Javro provide you a nice *autocomplete* to build Avro files. Every fields is contextualized to prevent you from struggling with every types.
+# 1. Write Avro with ease
+
+Javro provides you a nice *autocomplete* to write Avro files. Every field is contextualized to prevent you from struggling with every types.
 
 You can also use the *highlight* feature: place your pointer in a Avro field, to highlight it on the JSON preview.
 
 # 2. Validate it
 
-Avro errors appear on the bottom of the screen.
+Javro embed an Avro validator so that errors appear on the bottom of the screen.
 
 You can see all *meaningful errors* regarding your Avro file, and proposition to correct them.
 

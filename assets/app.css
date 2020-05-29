@@ -1,5 +1,6 @@
 :root {
     --brand-color: #FF634D;
+    --red-color: hsl(348, 100%, 61%);
 }
 
 .demo {
@@ -22,7 +23,7 @@
 }
 
 .highlight, em {
-    background-color: var(--brand-color);
+    background-color: var(--red-color);
     padding: 5px;
     border-radius: 5px;
     font-style: normal;
@@ -34,4 +35,8 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
+}
+
+.navbar-item img {
+    max-height: 5.75rem;
 }
