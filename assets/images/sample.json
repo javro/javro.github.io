@@ -1,0 +1,36 @@
+{
+  "namespace": "io.javro.Javro",
+  "name": "JavroKey",
+  "type": "record",
+  "fields": [
+    {
+      "name": "code",
+      "type": "string"
+    },
+    {
+      "name": "platform",
+      "type": {
+        "name": "Platform",
+        "type": "record",
+        "fields": [
+          {
+            "name": "isMac",
+            "type": "boolean"
+          },
+          {
+            "name": "isLinux",
+            "type": "boolean"
+          },
+          {
+            "name": "isWindows",
+            "type": "boolean"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cost",
+      "type": "int"
+    }
+  ]
+}
